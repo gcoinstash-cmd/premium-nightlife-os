@@ -74,7 +74,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="font-serif text-lg tracking-wide font-bold text-amber-100">NOCTURNE NIGHTLIFE — VENUE COMMAND OS</h3>
-                <span className="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20 font-mono">
+                <span className="text-xs font-semibold tracking-wider uppercase font-bold tracking-widest px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20 font-mono">
                   Live Dispatch
                 </span>
               </div>
@@ -117,14 +117,14 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <div className="flex flex-col gap-2">
                 <button
                   type="submit"
-                  className="w-full py-3 bg-gradient-to-r from-amber-600 to-purple-600 hover:from-amber-500 hover:to-purple-500 text-white font-bold rounded-xl shadow-lg transition-all text-xs tracking-widest uppercase"
+                  className="w-full py-3 bg-gradient-to-r from-amber-600 to-purple-600 hover:from-amber-500 hover:to-purple-500 text-white font-bold rounded-xl shadow-lg transition-all text-base font-semibold min-h-[44px] tracking-widest uppercase"
                 >
                   Verify Access
                 </button>
                 <button
                   type="button"
                   onClick={handleOneClickFill}
-                  className="w-full py-2.5 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-amber-300 font-bold rounded-xl transition-all text-xs tracking-wider flex items-center justify-center gap-2"
+                  className="w-full py-2.5 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-amber-300 font-bold rounded-xl transition-all text-base font-semibold min-h-[44px] tracking-wider flex items-center justify-center gap-2"
                 >
                   <Sparkles className="w-4 h-4 text-amber-400" />
                   Auto-Fill 1-Click Passkey (nightlife2026)
@@ -161,7 +161,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                 })}
               </div>
               <div className="flex items-center gap-4">
-                <span className="text-[11px] text-stone-400 font-mono flex items-center gap-1.5">
+                <span className="text-xs font-semibold text-stone-400 font-mono flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                   VENUE AT PEAK
                 </span>
@@ -180,24 +180,24 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               {/* Financial Metric Strip */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="p-4 bg-stone-900/50 border border-stone-800 rounded-xl">
-                  <span className="text-[10px] text-stone-400 uppercase tracking-widest block mb-1">Tonight's Bar & Bottle Gross</span>
+                  <span className="text-xs font-semibold tracking-wider text-stone-400 uppercase tracking-widest block mb-1">Tonight's Bar & Bottle Gross</span>
                   <span className="text-xl font-bold font-mono text-stone-100">$14,250.00</span>
-                  <span className="text-[10px] text-emerald-400 block mt-1">+22% vs Last Weekend</span>
+                  <span className="text-xs font-semibold tracking-wider text-emerald-400 block mt-1">+22% vs Last Weekend</span>
                 </div>
                 <div className="p-4 bg-stone-900/50 border border-stone-800 rounded-xl">
-                  <span className="text-[10px] text-stone-400 uppercase tracking-widest block mb-1">VIP Tables Booked</span>
+                  <span className="text-xs font-semibold tracking-wider text-stone-400 uppercase tracking-widest block mb-1">VIP Tables Booked</span>
                   <span className="text-xl font-bold font-mono text-stone-100">8 / 8 Tables</span>
-                  <span className="text-[10px] text-purple-400 block mt-1">100% Sold Out</span>
+                  <span className="text-xs font-semibold tracking-wider text-purple-400 block mt-1">100% Sold Out</span>
                 </div>
                 <div className="p-4 bg-stone-900/50 border border-stone-800 rounded-xl">
-                  <span className="text-[10px] text-stone-400 uppercase tracking-widest block mb-1">Live Door Headcount</span>
+                  <span className="text-xs font-semibold tracking-wider text-stone-400 uppercase tracking-widest block mb-1">Live Door Headcount</span>
                   <span className="text-xl font-bold font-mono text-stone-100">188 Guests</span>
-                  <span className="text-[10px] text-amber-400 block mt-1">Capacity: 200 Max</span>
+                  <span className="text-xs font-semibold tracking-wider text-amber-400 block mt-1">Capacity: 200 Max</span>
                 </div>
                 <div className="p-4 bg-stone-900/50 border border-stone-800 rounded-xl">
-                  <span className="text-[10px] text-stone-400 uppercase tracking-widest block mb-1">Decibel Level</span>
+                  <span className="text-xs font-semibold tracking-wider text-stone-400 uppercase tracking-widest block mb-1">Decibel Level</span>
                   <span className="text-xl font-bold font-mono text-stone-100">92 dB</span>
-                  <span className="text-[10px] text-emerald-400 block mt-1">Optimal Acoustic Room</span>
+                  <span className="text-xs font-semibold tracking-wider text-emerald-400 block mt-1">Optimal Acoustic Room</span>
                 </div>
               </div>
 
@@ -210,7 +210,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   </h4>
                   <div className="border border-stone-800 rounded-xl overflow-hidden">
                     <table className="w-full text-left text-xs text-stone-300">
-                      <thead className="bg-stone-900/80 text-[10px] uppercase font-bold text-stone-400 tracking-wider">
+                      <thead className="bg-stone-900/80 text-xs font-semibold tracking-wider uppercase font-bold text-stone-400 tracking-wider">
                         <tr>
                           <th className="py-3 px-4">Table</th>
                           <th className="py-3 px-4">Primary Host</th>
@@ -229,7 +229,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                             <td className="py-3 px-4 text-stone-400 font-sans">{t.section}</td>
                             <td className="py-3 px-4 text-emerald-400">{t.spendCommitment}</td>
                             <td className="py-3 px-4">
-                              <span className="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px]">
+                              <span className="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold tracking-wider">
                                 {t.status}
                               </span>
                             </td>
@@ -280,7 +280,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                         <div className="text-xs font-bold text-stone-100">{b.name}</div>
                         <div className="text-xs text-amber-400 font-mono">Stock: {b.inventory}</div>
                         <div className="text-xs text-stone-400">{b.tier}</div>
-                        <div className="pt-2 border-t border-stone-800 text-[11px] text-stone-400">{b.allocation}</div>
+                        <div className="pt-2 border-t border-stone-800 text-xs font-semibold text-stone-400">{b.allocation}</div>
                       </div>
                     ))}
                   </div>
@@ -293,7 +293,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <span className="font-mono">Turnkey Supabase Schema Ready • RLS Active</span>
               <button
                 onClick={onClose}
-                className="px-4 py-1.5 bg-stone-800 hover:bg-stone-700 text-stone-200 font-bold rounded-lg transition-colors text-xs"
+                className="px-4 py-1.5 bg-stone-800 hover:bg-stone-700 text-stone-200 font-bold rounded-lg transition-colors text-base font-semibold min-h-[44px]"
               >
                 Close Terminal
               </button>

@@ -105,14 +105,14 @@ export default function CodeExporterModal({
           {activeTab === "code" ? (
             <div className="space-y-4">
               <div className="flex items-center justify-between text-xs text-neutral-400 bg-neutral-950 px-4 py-2 rounded-lg border border-neutral-800/80">
-                <span className="font-mono text-[10px]">
+                <span className="font-mono text-xs font-semibold tracking-wider">
                   Filesize: ~{(htmlCode.length / 1024).toFixed(1)} KB • Self-contained production build (Pure vanilla markup & CSS)
                 </span>
                 <div className="flex items-center gap-3">
                   <button
                     id="copy-code-btn"
                     onClick={handleCopy}
-                    className="flex items-center gap-1.5 hover:text-neutral-100 transition-colors uppercase font-display text-[10px] tracking-wider font-semibold cursor-pointer"
+                    className="flex items-center gap-1.5 hover:text-neutral-100 transition-colors uppercase font-display text-base font-semibold min-h-[44px] font-semibold tracking-wider tracking-wider font-semibold cursor-pointer"
                   >
                     {copied ? (
                       <>
@@ -130,7 +130,7 @@ export default function CodeExporterModal({
                   <button
                     id="download-code-btn"
                     onClick={handleDownload}
-                    className="flex items-center gap-1.5 hover:text-neutral-100 transition-colors uppercase font-display text-[10px] tracking-wider font-semibold text-rose-400 hover:text-rose-300 cursor-pointer"
+                    className="flex items-center gap-1.5 hover:text-neutral-100 transition-colors uppercase font-display text-base font-semibold min-h-[44px] font-semibold tracking-wider tracking-wider font-semibold text-rose-400 hover:text-rose-300 cursor-pointer"
                   >
                     <Download className="w-3.5 h-3.5" />
                     <span>Download .html</span>
@@ -143,7 +143,7 @@ export default function CodeExporterModal({
                   id="source-code-textarea"
                   readOnly
                   value={htmlCode}
-                  className="w-full h-[400px] p-4 font-mono text-[11px] leading-relaxed bg-neutral-950 text-neutral-300 select-all focus:outline-none overflow-y-auto resize-none whitespace-pre"
+                  className="w-full h-[400px] p-4 font-mono text-base min-h-[44px] font-semibold leading-relaxed bg-neutral-950 text-neutral-300 select-all focus:outline-none overflow-y-auto resize-none whitespace-pre"
                 />
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function CodeExporterModal({
               </div>
 
               <div className="border-t border-neutral-800/80 pt-4">
-                <h5 className="font-display text-[11px] font-bold tracking-wider text-rose-400 mb-3">
+                <h5 className="font-display text-xs font-semibold font-bold tracking-wider text-rose-400 mb-3">
                   HOW TO SWAP PRESET THEMES (IN SECONDS)
                 </h5>
                 <p className="text-neutral-400 text-xs mb-3">
@@ -177,11 +177,11 @@ export default function CodeExporterModal({
               </div>
 
               <div className="border-t border-neutral-800/80 pt-4">
-                <h5 className="font-display text-[11px] font-bold tracking-wider text-rose-400 mb-2">
+                <h5 className="font-display text-xs font-semibold font-bold tracking-wider text-rose-400 mb-2">
                   EASY-EDIT COMMENT REGISTRIES
                 </h5>
                 <p className="text-neutral-400 text-xs mb-3">
-                  We have labeled every key editable copy and design block inside the source file with prominent block capital labels so non-coders can easily navigate the document using simple <kbd className="bg-neutral-800 px-1 py-0.5 text-[10px] rounded border border-neutral-700">Cmd / Ctrl + F</kbd> search:
+                  We have labeled every key editable copy and design block inside the source file with prominent block capital labels so non-coders can easily navigate the document using simple <kbd className="bg-neutral-800 px-1 py-0.5 text-xs font-semibold tracking-wider rounded border border-neutral-700">Cmd / Ctrl + F</kbd> search:
                 </p>
                 <ul className="grid grid-cols-2 gap-4 text-xs font-mono text-neutral-400 pl-4 list-disc">
                   <li>EDIT BRAND NAME HERE</li>
@@ -197,17 +197,17 @@ export default function CodeExporterModal({
 
               <div className="border-t border-neutral-800/80 pt-4 flex justify-between items-center bg-neutral-950 p-4 rounded-lg">
                 <div>
-                  <h6 className="font-display text-[10px] tracking-wider font-semibold text-neutral-100">
+                  <h6 className="font-display text-xs font-semibold tracking-wider tracking-wider font-semibold text-neutral-100">
                     SEO & CONVERSION OPTIMIZED
                   </h6>
-                  <p className="text-[11px] text-neutral-400">
+                  <p className="text-xs font-semibold text-neutral-400">
                     Includes valid JSON-LD structured schema block, Open Graph, preconnect headers, and accessible labels out of the box.
                   </p>
                 </div>
                 <button
                   id="tab-instruction-download"
                   onClick={handleDownload}
-                  className="bg-rose-600 hover:bg-rose-500 text-white font-display text-[10px] font-bold px-4 py-2 tracking-widest transition-all hover:scale-105 cursor-pointer"
+                  className="bg-rose-600 hover:bg-rose-500 text-white font-display text-base font-semibold min-h-[44px] font-semibold tracking-wider font-bold px-5 py-3 min-h-[44px] tracking-widest transition-all hover:scale-105 cursor-pointer"
                 >
                   DOWNLOAD ZIP PACKAGE
                 </button>
@@ -226,14 +226,14 @@ export default function CodeExporterModal({
             <button
               id="footer-close-btn"
               onClick={onClose}
-              className="px-4 py-2 border border-neutral-800 rounded bg-neutral-900 text-neutral-300 font-display text-[10px] font-semibold hover:text-white hover:bg-neutral-800 transition-colors tracking-widest cursor-pointer"
+              className="px-5 py-3 min-h-[44px] border border-neutral-800 rounded bg-neutral-900 text-neutral-300 font-display text-base font-semibold min-h-[44px] font-semibold tracking-wider font-semibold hover:text-white hover:bg-neutral-800 transition-colors tracking-widest cursor-pointer"
             >
               Back to Preview
             </button>
             <button
               id="footer-download-btn"
               onClick={handleDownload}
-              className="px-4 py-2 rounded bg-rose-600 text-white font-display text-[10px] font-bold hover:bg-rose-500 transition-transform tracking-widest cursor-pointer"
+              className="px-5 py-3 min-h-[44px] rounded bg-rose-600 text-white font-display text-base font-semibold min-h-[44px] font-semibold tracking-wider font-bold hover:bg-rose-500 transition-transform tracking-widest cursor-pointer"
             >
               Export Template File
             </button>

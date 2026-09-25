@@ -101,7 +101,7 @@ export default function LiveTemplatePreview({
     <div className={`${activeTheme} bg-theme-main text-theme-body font-sans transition-all duration-300 relative w-full`}>
       
       {/* 1. ANNOUNCEMENT / NOT mOCK BAR */}
-      <div className="bg-[var(--color-brand)] text-[var(--color-bg-main)] font-display text-[11px] font-bold tracking-widest text-center py-2 px-4 select-none relative z-[1010] flex items-center justify-center gap-2">
+      <div className="bg-[var(--color-brand)] text-[var(--color-bg-main)] font-display text-xs font-semibold font-bold tracking-widest text-center py-2 px-4 select-none relative z-[1010] flex items-center justify-center gap-2">
         <span className="inline-block w-1.5 h-1.5 bg-[var(--color-bg-main)] rounded-full animate-ping"></span>
         <span>{activeContent.announcement}</span>
       </div>
@@ -130,7 +130,7 @@ export default function LiveTemplatePreview({
             <button
               type="button"
               onClick={onOpenAdmin}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded bg-amber-500/15 border border-amber-500/35 text-amber-300 font-mono text-[10px] uppercase tracking-widest hover:bg-amber-500/25 transition-all"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded bg-amber-500/15 border border-amber-500/35 text-amber-300 font-mono text-base font-semibold min-h-[44px] font-semibold tracking-wider uppercase tracking-widest hover:bg-amber-500/25 transition-all"
             >
               <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
               <span className="hidden sm:inline">[ NOCTURNE PASS ]</span>
@@ -138,7 +138,7 @@ export default function LiveTemplatePreview({
             </button>
             <a 
               href="#reservations" 
-              className="bg-[var(--color-brand)] hover:opacity-90 text-[var(--color-bg-main)] font-display text-[10px] font-bold tracking-widest px-4 py-2.5 transition-all duration-350 select-none uppercase"
+              className="bg-[var(--color-brand)] hover:opacity-90 text-[var(--color-bg-main)] font-display text-xs font-semibold tracking-wider font-bold tracking-widest px-4 py-2.5 transition-all duration-350 select-none uppercase"
               style={{ borderRadius: "var(--radius-btn)" }}
             >
               Reserve a Table
@@ -173,7 +173,7 @@ export default function LiveTemplatePreview({
         
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 w-full">
           <div className="lg:col-span-12 xl:col-span-7 flex flex-col items-start gap-6">
-            <span className="font-display text-[11px] font-bold text-theme-brand tracking-widest uppercase mt-2">
+            <span className="font-display text-xs font-semibold font-bold text-theme-brand tracking-widest uppercase mt-2">
               [ {activeContent.tagline} ]
             </span>
             <h1 className="font-serif text-[clamp(2.2rem,4.5vw,4.2rem)] leading-[1.08] text-theme-lead tracking-tight font-medium">
@@ -185,14 +185,14 @@ export default function LiveTemplatePreview({
             <div className="flex flex-wrap gap-4 mt-4 w-full sm:w-auto">
               <a 
                 href="#reservations" 
-                className="w-full sm:w-auto bg-[var(--color-brand)] text-[var(--color-bg-main)] font-display text-[11px] font-bold tracking-widest px-8 py-4 uppercase text-center hover:bg-theme-lead hover:text-[var(--color-bg-main)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+                className="w-full sm:w-auto bg-[var(--color-brand)] text-[var(--color-bg-main)] font-display text-xs font-semibold font-bold tracking-widest px-8 py-4 uppercase text-center hover:bg-theme-lead hover:text-[var(--color-bg-main)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
                 style={{ borderRadius: "var(--radius-btn)" }}
               >
                 {activeContent.ctaPrimaryText}
               </a>
               <a 
                 href="#weekly" 
-                className="w-full sm:w-auto border border-theme-strong text-theme-lead font-display text-[11px] font-bold tracking-widest px-8 py-4 uppercase text-center hover:border-theme-brand hover:shadow-[0_0_15px_var(--color-glow)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+                className="w-full sm:w-auto border border-theme-strong text-theme-lead font-display text-xs font-semibold font-bold tracking-widest px-8 py-4 uppercase text-center hover:border-theme-brand hover:shadow-[0_0_15px_var(--color-glow)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
                 style={{ borderRadius: "var(--radius-btn)" }}
               >
                 {activeContent.ctaSecondaryText}
@@ -220,7 +220,7 @@ export default function LiveTemplatePreview({
       <section id="rituals" className="py-24 bg-theme-muted/50 border-b border-theme/50 relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-xl mb-16">
-            <span className="font-display text-[10px] font-bold text-theme-brand tracking-widest block mb-2 uppercase">
+            <span className="font-display text-xs font-semibold tracking-wider font-bold text-theme-brand tracking-widest block mb-2 uppercase">
               {activeContent.featuresSub}
             </span>
             <h2 className="font-serif text-3xl lg:text-4xl text-theme-lead tracking-tight">
@@ -255,7 +255,7 @@ export default function LiveTemplatePreview({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             
             <div className="lg:col-span-6 flex flex-col items-start text-left">
-              <span className="font-display text-[10px] font-bold text-theme-brand tracking-widest block mb-2 uppercase">
+              <span className="font-display text-xs font-semibold tracking-wider font-bold text-theme-brand tracking-widest block mb-2 uppercase">
                 Our Story
               </span>
               <h2 className="font-serif text-3xl lg:text-4xl text-theme-lead tracking-tight mb-8">
@@ -275,7 +275,7 @@ export default function LiveTemplatePreview({
                 <span className="font-serif text-lg text-theme-lead block font-semibold leading-tight">
                   {activeContent.storySignatureAuthor}
                 </span>
-                <span className="font-display text-[10px] font-bold text-theme-dim tracking-wider uppercase">
+                <span className="font-display text-xs font-semibold tracking-wider font-bold text-theme-dim tracking-wider uppercase">
                   {activeContent.storySignatureLabel}
                 </span>
               </div>
@@ -303,7 +303,7 @@ export default function LiveTemplatePreview({
       <section id="menu" className="py-24 bg-theme-muted/30 border-b border-theme/50 relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-14">
-            <span className="font-display text-[10px] font-bold text-theme-brand tracking-widest block mb-2 uppercase">
+            <span className="font-display text-xs font-semibold tracking-wider font-bold text-theme-brand tracking-widest block mb-2 uppercase">
               {activeContent.menuSub}
             </span>
             <h2 className="font-serif text-2xl lg:text-4xl text-theme-lead tracking-tight">
@@ -385,7 +385,7 @@ export default function LiveTemplatePreview({
       <section id="weekly" className="py-24 border-b border-theme/50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-14">
-            <span className="font-display text-[10px] font-bold text-theme-brand tracking-widest block mb-2 uppercase">
+            <span className="font-display text-xs font-semibold tracking-wider font-bold text-theme-brand tracking-widest block mb-2 uppercase">
               {activeContent.eventsSub}
             </span>
             <h2 className="font-serif text-3xl lg:text-4xl text-theme-lead tracking-tight">
@@ -401,7 +401,7 @@ export default function LiveTemplatePreview({
               >
                 <div className="flex flex-col gap-1 min-w-[140px] font-display">
                   <span className="text-2xl font-bold text-theme-brand tracking-wider">{event.day}</span>
-                  <span className="text-[10px] text-theme-dim tracking-wider uppercase font-semibold">{event.time}</span>
+                  <span className="text-xs font-semibold tracking-wider text-theme-dim tracking-wider uppercase font-semibold">{event.time}</span>
                 </div>
 
                 <div className="flex-1">
@@ -418,13 +418,13 @@ export default function LiveTemplatePreview({
                   <p className="text-theme-dim text-xs leading-relaxed max-w-2xl font-light mb-1">
                     {event.description}
                   </p>
-                  <span className="font-mono text-[10px] text-theme-brand/80">{event.genre}</span>
+                  <span className="font-mono text-xs font-semibold tracking-wider text-theme-brand/80">{event.genre}</span>
                 </div>
 
                 <div className="w-full lg:w-auto">
                   <a 
                     href="#reservations"
-                    className="w-full lg:w-auto text-center inline-block border border-theme-strong hover:border-theme-brand text-theme-lead hover:shadow-[0_0_10px_var(--color-glow)] font-display text-[10px] font-bold tracking-widest px-5 py-2.5 uppercase transition-all"
+                    className="w-full lg:w-auto text-center inline-block border border-theme-strong hover:border-theme-brand text-theme-lead hover:shadow-[0_0_10px_var(--color-glow)] font-display text-xs font-semibold tracking-wider font-bold tracking-widest px-5 py-2.5 uppercase transition-all"
                     style={{ borderRadius: "var(--radius-btn)" }}
                   >
                     Reserve a Table
@@ -440,7 +440,7 @@ export default function LiveTemplatePreview({
       <section id="testimonials" className="py-24 bg-theme-card border-b border-theme-strong/40">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="font-display text-[10px] font-bold text-theme-brand tracking-widest block mb-2 uppercase">
+            <span className="font-display text-xs font-semibold tracking-wider font-bold text-theme-brand tracking-widest block mb-2 uppercase">
               {activeContent.testimonialsSub}
             </span>
             <h2 className="font-serif text-2xl lg:text-3xl text-theme-lead tracking-tight">
@@ -464,7 +464,7 @@ export default function LiveTemplatePreview({
                   <span className="font-display text-xs font-semibold tracking-wider text-theme-lead uppercase">
                     {testimonial.author}
                   </span>
-                  <span className="font-sans text-[11px] text-theme-dim">
+                  <span className="font-sans text-xs font-semibold text-theme-dim">
                     {testimonial.role} — {testimonial.source}
                   </span>
                 </cite>
@@ -483,7 +483,7 @@ export default function LiveTemplatePreview({
             
             {/* Live Interactive Form */}
             <div className="lg:col-span-7 bg-theme-card border border-theme rounded-xl p-8 lg:p-12">
-              <span className="font-display text-[10px] font-bold text-theme-brand tracking-widest block mb-2 uppercase">
+              <span className="font-display text-xs font-semibold tracking-wider font-bold text-theme-brand tracking-widest block mb-2 uppercase">
                 {activeContent.reservationSub}
               </span>
               <h2 className="font-serif text-2xl lg:text-3xl text-theme-lead tracking-tight mb-4">
@@ -504,25 +504,25 @@ export default function LiveTemplatePreview({
                 <form onSubmit={handleFormSubmit} className="space-y-6 mt-8 font-sans">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
-                      <label htmlFor="name" className="font-display text-[11px] font-bold text-theme-lead tracking-wider">Name</label>
+                      <label htmlFor="name" className="font-display text-sm font-semibold font-bold text-theme-lead tracking-wider">Name</label>
                       <input 
                         type="text" 
                         id="name" 
                         value={formData.name}
                         onChange={handleFormChange}
-                        className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-sm focus:outline-none"
+                        className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-base min-h-[44px] focus:outline-none"
                         placeholder="Your full name" 
                         required 
                       />
                     </div>
                     <div className="flex flex-col gap-2">
-                      <label htmlFor="email" className="font-display text-[11px] font-bold text-theme-lead tracking-wider">Email</label>
+                      <label htmlFor="email" className="font-display text-sm font-semibold font-bold text-theme-lead tracking-wider">Email</label>
                       <input 
                         type="email" 
                         id="email" 
                         value={formData.email}
                         onChange={handleFormChange}
-                        className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-sm focus:outline-none"
+                        className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-base min-h-[44px] focus:outline-none"
                         placeholder="Your email address" 
                         required 
                       />
@@ -531,12 +531,12 @@ export default function LiveTemplatePreview({
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                     <div className="flex flex-col gap-2">
-                      <label htmlFor="guests" className="font-display text-[11px] font-bold text-theme-lead tracking-wider">Guests</label>
+                      <label htmlFor="guests" className="font-display text-sm font-semibold font-bold text-theme-lead tracking-wider">Guests</label>
                       <select 
                         id="guests" 
                         value={formData.guests}
                         onChange={handleFormChange}
-                        className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-sm focus:none outline-none appearance-none cursor-pointer"
+                        className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-base min-h-[44px] focus:none outline-none appearance-none cursor-pointer"
                       >
                         <option value="1">1 Guest</option>
                         <option value="2">2 Guests</option>
@@ -548,23 +548,23 @@ export default function LiveTemplatePreview({
                       </select>
                     </div>
                     <div className="flex flex-col gap-2">
-                      <label htmlFor="date" className="font-display text-[11px] font-bold text-theme-lead tracking-wider">Date</label>
+                      <label htmlFor="date" className="font-display text-sm font-semibold font-bold text-theme-lead tracking-wider">Date</label>
                       <input 
                         type="date" 
                         id="date" 
                         value={formData.date}
                         onChange={handleFormChange}
-                        className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-sm focus:outline-none cursor-pointer" 
+                        className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-base min-h-[44px] focus:outline-none cursor-pointer" 
                         required 
                       />
                     </div>
                     <div className="flex flex-col gap-2">
-                      <label htmlFor="time" className="font-display text-[11px] font-bold text-theme-lead tracking-wider">Time</label>
+                      <label htmlFor="time" className="font-display text-sm font-semibold font-bold text-theme-lead tracking-wider">Time</label>
                       <select 
                         id="time" 
                         value={formData.time}
                         onChange={handleFormChange}
-                        className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-sm focus:none outline-none appearance-none cursor-pointer"
+                        className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-base min-h-[44px] focus:none outline-none appearance-none cursor-pointer"
                       >
                         <option value="5:00 PM">5:00 PM</option>
                         <option value="5:30 PM">5:30 PM</option>
@@ -583,12 +583,12 @@ export default function LiveTemplatePreview({
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="occasion" className="font-display text-[11px] font-bold text-theme-lead tracking-wider">Occasion</label>
+                    <label htmlFor="occasion" className="font-display text-sm font-semibold font-bold text-theme-lead tracking-wider">Occasion</label>
                     <select 
                       id="occasion" 
                       value={formData.occasion}
                       onChange={handleFormChange}
-                      className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-sm focus:none outline-none appearance-none cursor-pointer"
+                      className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-base min-h-[44px] focus:none outline-none appearance-none cursor-pointer"
                     >
                       <option value="None">No Special Occasion</option>
                       <option value="Birthday">Birthday</option>
@@ -600,13 +600,13 @@ export default function LiveTemplatePreview({
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="notes" className="font-display text-[11px] font-bold text-theme-lead tracking-wider">Special Requests</label>
+                    <label htmlFor="notes" className="font-display text-sm font-semibold font-bold text-theme-lead tracking-wider">Special Requests</label>
                     <textarea 
                       id="notes" 
                       rows={3} 
                       value={formData.notes}
                       onChange={handleFormChange}
-                      className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-sm focus:outline-none"
+                      className="bg-theme-muted border border-theme focus:border-theme-brand text-theme-lead p-3 rounded text-base min-h-[44px] focus:outline-none"
                       placeholder="Add any special requests..."
                     ></textarea>
                   </div>
@@ -615,7 +615,7 @@ export default function LiveTemplatePreview({
                     id="submit-res-btn"
                     type="submit" 
                     disabled={formLoading}
-                    className="w-full bg-[var(--color-brand)] text-[var(--color-bg-main)] font-display text-[11px] font-bold tracking-widest py-4 uppercase hover:bg-theme-lead hover:text-[var(--color-bg-main)] transition-all cursor-pointer"
+                    className="w-full bg-[var(--color-brand)] text-[var(--color-bg-main)] font-display text-base font-semibold min-h-[44px] font-semibold font-bold tracking-widest py-4 uppercase hover:bg-theme-lead hover:text-[var(--color-bg-main)] transition-all cursor-pointer"
                     style={{ borderRadius: "var(--radius-btn)" }}
                   >
                     {formLoading ? "Submitting Reservation..." : "Submit Reservation"}
@@ -627,7 +627,7 @@ export default function LiveTemplatePreview({
             {/* Private Events Upsell Pitch */}
             <div className="lg:col-span-5 bg-gradient-to-br from-theme-card to-[rgba(var(--color-brand-rgb),0.04)] border border-theme rounded-xl p-8 lg:p-12 flex flex-col justify-between">
               <div>
-                <span className="font-display text-[10px] font-bold text-theme-brand tracking-widest block mb-2 uppercase">
+                <span className="font-display text-xs font-semibold tracking-wider font-bold text-theme-brand tracking-widest block mb-2 uppercase">
                   {activeContent.privateEventsSub}
                 </span>
                 <h3 className="font-serif text-2xl lg:text-3xl text-theme-lead tracking-tight mb-6">
@@ -653,7 +653,7 @@ export default function LiveTemplatePreview({
                 <a 
                   id="pdf-eventdeck-download"
                   href={`mailto:${activeContent.email}?subject=Private%20Event%20Inquiry`} 
-                  className="w-full text-center block border border-theme-strong hover:border-theme-brand text-theme-lead hover:shadow-[0_0_15px_var(--color-glow)] font-display text-[10px] font-bold tracking-widest py-4 uppercase transition-all duration-350"
+                  className="w-full text-center block border border-theme-strong hover:border-theme-brand text-theme-lead hover:shadow-[0_0_15px_var(--color-glow)] font-display text-xs font-semibold tracking-wider font-bold tracking-widest py-4 uppercase transition-all duration-350"
                   style={{ borderRadius: "var(--radius-btn)" }}
                 >
                   Inquire About Private Events
@@ -672,7 +672,7 @@ export default function LiveTemplatePreview({
             
             <div className="lg:col-span-5 flex flex-col justify-between">
               <div>
-                <span className="font-display text-[10px] font-bold text-theme-brand tracking-widest block mb-2 uppercase">
+                <span className="font-display text-xs font-semibold tracking-wider font-bold text-theme-brand tracking-widest block mb-2 uppercase">
                   Find Us
                 </span>
                 <h2 className="font-serif text-3xl text-theme-lead tracking-tight mb-8">
@@ -683,7 +683,7 @@ export default function LiveTemplatePreview({
                   <div className="flex items-start gap-4">
                     <MapPin className="w-5 h-5 text-theme-brand flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-display text-[10px] tracking-wider text-theme-lead font-bold uppercase mb-1">Address</p>
+                      <p className="font-display text-xs font-semibold tracking-wider tracking-wider text-theme-lead font-bold uppercase mb-1">Address</p>
                       <p className="text-theme-body text-xs font-light">{activeContent.address}</p>
                       <p className="text-theme-dim text-xs font-light">{activeContent.cityState}</p>
                     </div>
@@ -692,7 +692,7 @@ export default function LiveTemplatePreview({
                   <div className="flex items-start gap-4">
                     <Phone className="w-5 h-5 text-theme-brand flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-display text-[10px] tracking-wider text-theme-lead font-bold uppercase mb-1">Telephone</p>
+                      <p className="font-display text-xs font-semibold tracking-wider tracking-wider text-theme-lead font-bold uppercase mb-1">Telephone</p>
                       <p className="text-theme-body text-xs font-light">{activeContent.phone}</p>
                     </div>
                   </div>
@@ -700,7 +700,7 @@ export default function LiveTemplatePreview({
                   <div className="flex items-start gap-4">
                     <Mail className="w-5 h-5 text-theme-brand flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-display text-[10px] tracking-wider text-theme-lead font-bold uppercase mb-1">Inquiries</p>
+                      <p className="font-display text-xs font-semibold tracking-wider tracking-wider text-theme-lead font-bold uppercase mb-1">Inquiries</p>
                       <p className="text-theme-body text-xs font-light">{activeContent.email}</p>
                     </div>
                   </div>
@@ -709,11 +709,11 @@ export default function LiveTemplatePreview({
 
               {/* Operating Cycles list */}
               <div className="border-t border-theme/60 pt-8 mt-12">
-                <h4 className="font-display text-[10px] tracking-wider text-theme-lead font-bold uppercase mb-4">Hours of Operation</h4>
+                <h4 className="font-display text-xs font-semibold tracking-wider tracking-wider text-theme-lead font-bold uppercase mb-4">Hours of Operation</h4>
                 <div className="space-y-3">
                   {activeContent.hours.map((hour, idx) => (
                     <div key={idx} className="flex justify-between items-center text-xs">
-                      <span className="text-theme-lead font-display text-[11px] font-semibold">{hour.days}</span>
+                      <span className="text-theme-lead font-display text-xs font-semibold font-semibold">{hour.days}</span>
                       <div className="flex-1 border-b border-dotted border-theme mx-4"></div>
                       <span className="text-theme-brand font-mono">{hour.time}</span>
                     </div>
@@ -727,7 +727,7 @@ export default function LiveTemplatePreview({
               <div className="absolute inset-0 opacity-15" style={{ backgroundImage: "radial-gradient(var(--color-text-dim)_1px,transparent_1px)", backgroundSize: "20px 20px" }}></div>
               
               <div className="bg-theme-main border border-theme-brand max-w-sm p-8 text-center relative z-10 shadow-2xl space-y-4" style={{ borderWidth: "1px" }}>
-                <span className="font-display text-[10px] tracking-wider text-theme-brand font-bold uppercase">Arrival & Parking</span>
+                <span className="font-display text-xs font-semibold tracking-wider tracking-wider text-theme-brand font-bold uppercase">Arrival & Parking</span>
                 <h4 className="font-serif text-lg font-semibold text-theme-lead">
                   {activeContent.id === "neon-soul" ? "Downtown New Orleans" : "SoHo, Manhattan"}
                 </h4>
@@ -741,7 +741,7 @@ export default function LiveTemplatePreview({
                   href={`https://maps.google.com/?q=${encodeURIComponent(activeContent.address + " " + activeContent.cityState)}`}
                   target="_blank" 
                   rel="noreferrer" 
-                  className="inline-flex items-center gap-2 border border-theme-brand hover:bg-theme-brand hover:text-theme-main text-theme-lead font-display text-[10px] px-4 py-2 font-bold tracking-widest uppercase transition-all"
+                  className="inline-flex items-center gap-2 border border-theme-brand hover:bg-theme-brand hover:text-theme-main text-theme-lead font-display text-xs font-semibold tracking-wider px-4 py-2 font-bold tracking-widest uppercase transition-all"
                   style={{ borderRadius: "var(--radius-btn)" }}
                 >
                   <span>GET DIRECTIONS</span>
@@ -765,14 +765,14 @@ export default function LiveTemplatePreview({
             <p className="text-theme-dim font-light text-xs max-w-xs leading-relaxed">
               {activeContent.tagline}
             </p>
-            <p className="text-[10px] text-theme-dim/75 font-mono">
+            <p className="text-xs font-semibold tracking-wider text-theme-dim/75 font-mono">
               © 2026 {activeContent.brandName}. All rights reserved.
             </p>
           </div>
 
           <div className="space-y-4">
-            <h5 className="font-display text-[10px] font-bold tracking-widest text-theme-lead">Navigate</h5>
-            <ul className="space-y-2 font-display text-[10px] font-semibold tracking-wider">
+            <h5 className="font-display text-xs font-semibold tracking-wider font-bold tracking-widest text-theme-lead">Navigate</h5>
+            <ul className="space-y-2 font-display text-xs font-semibold tracking-wider font-semibold tracking-wider">
               <li><a href="#about" className="hover:text-theme-brand hover:pl-1 transition-all">Our Story</a></li>
               <li><a href="#rituals" className="hover:text-theme-brand hover:pl-1 transition-all">The Room</a></li>
               <li><a href="#menu" className="hover:text-theme-brand hover:pl-1 transition-all">Our Menu</a></li>
@@ -782,8 +782,8 @@ export default function LiveTemplatePreview({
           </div>
 
           <div className="space-y-4">
-            <h5 className="font-display text-[10px] font-bold tracking-widest text-theme-lead">Resources</h5>
-            <ul className="space-y-2 font-display text-[10px] font-semibold tracking-wider">
+            <h5 className="font-display text-xs font-semibold tracking-wider font-bold tracking-widest text-theme-lead">Resources</h5>
+            <ul className="space-y-2 font-display text-xs font-semibold tracking-wider font-semibold tracking-wider">
               <li><a href="#reservations" className="hover:text-theme-brand hover:pl-1 transition-all">Reservations</a></li>
               <li><a href="#contact" className="hover:text-theme-brand hover:pl-1 transition-all">Find Us</a></li>
               <li><a href={`mailto:${activeContent.email}?subject=Private%20Event%20Inquiry`} className="hover:text-theme-brand hover:pl-1 transition-all">Private Events</a></li>
@@ -792,7 +792,7 @@ export default function LiveTemplatePreview({
           </div>
 
           <div className="space-y-4">
-            <h5 className="font-display text-[10px] font-bold tracking-widest text-theme-lead">Newsletter</h5>
+            <h5 className="font-display text-xs font-semibold tracking-wider font-bold tracking-widest text-theme-lead">Newsletter</h5>
             <p className="text-theme-dim leading-relaxed text-xs font-light">
               Subscribe to receive exclusive invitations, upcoming event announcements, and seasonal menu specials.
             </p>
@@ -818,7 +818,7 @@ export default function LiveTemplatePreview({
                       setNewsletterEmail("");
                     }
                   }} 
-                  className="bg-theme-brand text-[var(--color-bg-main)] font-display text-[10px] font-black px-4 hover:opacity-90 select-none cursor-pointer"
+                  className="bg-theme-brand text-[var(--color-bg-main)] font-display text-xs font-semibold tracking-wider font-black px-4 hover:opacity-90 select-none cursor-pointer"
                 >
                   Join
                 </button>
@@ -829,12 +829,12 @@ export default function LiveTemplatePreview({
         </div>
 
         <div className="max-w-7xl mx-auto px-6 border-t border-theme/60 pt-8 flex flex-col sm:flex-row justify-between items-center gap-6">
-          <p className="text-[10px] font-light max-w-xl text-theme-dim">
+          <p className="text-xs font-semibold tracking-wider font-light max-w-xl text-theme-dim">
             Live music and classic dining daily. Table reservations are recommended for weekend music sets. Smart casual dress code.
           </p>
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-2 border border-theme px-4 py-2 hover:border-theme-brand text-theme-lead font-display text-[10px] font-bold tracking-widest uppercase transition-all cursor-pointer"
+            className="flex items-center gap-2 border border-theme px-4 py-2 hover:border-theme-brand text-theme-lead font-display text-xs font-semibold tracking-wider font-bold tracking-widest uppercase transition-all cursor-pointer"
             style={{ borderRadius: "var(--radius-btn)" }}
           >
             <span>Back to Top</span>

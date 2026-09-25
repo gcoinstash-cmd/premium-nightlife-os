@@ -1686,7 +1686,7 @@ export function generateTemplateHtml(content: VenueContent, themeClass: "theme-n
           <h5>The Weekly Dispatch</h5>
           <p class="text-dim text-xs">Subscribe to receive exclusive invitations, seasonal menu specials, and upcoming performance details.</p>
           <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
-            <input type="email" class="form-control text-xs" placeholder="Enter your email address" required style="flex:1; padding: 0.6rem 1rem;">
+            <input type="email" class="form-control text-base min-h-[44px]" placeholder="Enter your email address" required style="flex:1; padding: 0.6rem 1rem;">
             <button type="submit" class="btn btn-primary btn-sm font-display" style="padding: 0 1rem;">Join</button>
           </form>
         </div>
